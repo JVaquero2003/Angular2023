@@ -1,0 +1,14 @@
+<table>
+  <thead>
+    <tr>
+      <th>Carrera</th>
+    </tr>
+  </thead>
+  <tbody>
+    <ng-container *ngFor='let carrera of  carreras'>
+      <tr>
+        <td><a [routerLink]="['/Carrera', carrera.ID]">{{carrera.Titulo }} </a></td>
+      </tr>
+    </ng-container>
+  </tbody>
+</table>
